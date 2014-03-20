@@ -1,0 +1,5 @@
+content   delaycond                content/
+skin      delaycond  classic/1.0   skin/
+locale    delaycond  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://delaycond/content/browserOverlay.xul

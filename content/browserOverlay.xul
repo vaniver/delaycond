@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://delaycond/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://delaycond/locale/browserOverlay.dtd">
+
+<overlay id="delaycond-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://delaycond/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="delaycond-string-bundle"
+      src="chrome://delaycond/locale/browserOverlay.properties" />
+  </stringbundleset>
+
+  <menubar id="main-menubar">
+    <menu id="delaycond-hello-menu" label="&delaycond.hello.label;"
+      accesskey="&delaycond.helloMenu.accesskey;" insertafter="helpMenu">
+      <menupopup>
+        <menuitem id="delaycond-hello-menu-item"
+          label="&delaycond.hello.label;"
+          accesskey="&delaycond.helloItem.accesskey;"
+          oncommand="delaycondChrome.BrowserOverlay.sayHello(event);" />
+      </menupopup>
+    </menu>
+  </menubar>
+
+  <vbox id="appmenuSecondaryPane">
+    <menu id="delaycond-hello-menu-2" label="&delaycond.hello.label;"
+      accesskey="&delaycond.helloMenu.accesskey;"
+      insertafter="appmenu_addons">
+      <menupopup>
+        <menuitem id="delaycond-hello-menu-item-2"
+          label="&delaycond.hello.label;"
+          accesskey="&delaycond.helloItem.accesskey;"
+          oncommand="delaycondChrome.BrowserOverlay.sayHello(event);" />
+      </menupopup>
+    </menu>
+  </vbox>
+</overlay>

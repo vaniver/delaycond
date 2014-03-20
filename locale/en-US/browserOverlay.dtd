@@ -1,0 +1,3 @@
+<!ENTITY delaycond.hello.label            "Hello World!">
+<!ENTITY delaycond.helloMenu.accesskey    "l">
+<!ENTITY delaycond.helloItem.accesskey    "H">
